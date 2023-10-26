@@ -1,0 +1,20 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "yohari": "sass --watch src:public/assets/css",
+    "start": "concurrently \"npm run yohari\" \"npm run goservergo\""
+  },
+  "keywords": [],
+  "author": "Harivadan Joshi",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.4"
+  }
+}
